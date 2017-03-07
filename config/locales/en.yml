@@ -1,23 +1,52 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
+  users:
+    new:
+      signup: "Sign Up!"
+      users: "This will be a sign up page for new users!"
+  static_pages:
+    help:
+      help1: "Get help on the Ruby on Rails Tutorial at the"
+      help2: "Rails tutorial help page"
+      help3: "To get help on this sample app, see the"
+      help4: "Ruby On Rails tutorial book"
+    about:
+      isa: "is a"
+      the: "The"
+      rubytut: "Ruby On Rails Tutorial"
+      book: "book"
+      and: "and"
+      screencasts: "screencasts series"
+      teach: "to teach web development with"
+      ror: "Ruby On Rails"
+      this: "This is the sample application for the tutorial."
+    contact:
+      contact: "Contact Page"
+      contact1: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contact2: "contact page."
+    home:
+      sampleapp: "Welcome to the Sample App"
+      sample1: "sample application."
+      homepage: "This is the home page for the"
+      railtut: "Ruby on Rails Tutorial"
+      signup: "Sign Up Now!"
+      kitten: "Kitten Logo"
+      kitten1: "Kitten Logo"
+      rails: "Rails Logo"
+      rails1: "Rails Logo"
   hello: "Hello world"
+  layouts:
+    application:
+      app_title: "Ruby On Rails Tutorial"
+    header:
+      sampleapp: "Sample App"
+      home: "Home"
+      help: "Help"
+      login: "Log In"
+    footer:
+      about: "About"
+      contact: "Contact"
+      news: "News"
+      the: "The"
+      by: "by"
+      railtut: "Ruby on Rails Tutorial"
+      mc: "Michael Hartl"
