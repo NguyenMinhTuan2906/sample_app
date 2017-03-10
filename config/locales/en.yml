@@ -1,4 +1,14 @@
 en:
+  sessions:
+    create:
+      invalid: "Invalid email/password combination"
+    new:
+      logintittle: "Log In"
+      login: "Log In"
+      newuser: "New user ? "
+      signup: "Sign Up now!"
+      email: "Email:"
+      password: "Password:"
   shared:
     error_messages:
       errors: "The form contains"
@@ -48,10 +58,15 @@ en:
     application:
       app_title: "Ruby On Rails Tutorial"
     header:
+      account: "Account"
+      profile: "Profile"
+      user: "Users"
       sampleapp: "Sample App"
       home: "Home"
       help: "Help"
       login: "Log In"
+      logout: "Log Out"
+      setting: "Settings"
     footer:
       about: "About"
       contact: "Contact"
