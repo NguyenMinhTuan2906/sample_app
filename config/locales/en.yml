@@ -1,8 +1,18 @@
 en:
+  shared:
+    error_messages:
+      errors: "The form contains"
   users:
+    create:
+      welcome: "Welcome To Sample App!"
     new:
-      signup: "Sign Up!"
-      users: "This will be a sign up page for new users!"
+      create: "Create My Account"
+      signup: "Sign Up"
+      confirm: "Password Confirmation:"
+      title: "Sign Up"
+      email: "Email:"
+      name: "Name:"
+      password: "Password:"
   static_pages:
     help:
       help1: "Get help on the Ruby on Rails Tutorial at the"
