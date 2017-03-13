@@ -5,10 +5,11 @@ en:
     new:
       logintittle: "Log In"
       login: "Log In"
-      newuser: "New user ? "
+      newuser: "New user?"
       signup: "Sign Up now!"
       email: "Email:"
       password: "Password:"
+      remember_me: "Remember me on this computer"
   shared:
     error_messages:
       errors: "The form contains"
