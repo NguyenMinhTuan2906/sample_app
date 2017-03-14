@@ -14,6 +14,32 @@ en:
     error_messages:
       errors: "The form contains"
   users:
+    show:
+      none: "There is no user that matched this ID!"
+      log_in: "Please log in first"
+    destroy:
+      delete: "Account has been successfully deleted!"
+      delete_fail: "Can not delete this account!"
+    user:
+      confirm: "Are you sure to delete this account?"
+    index:
+      all_users: "All Users"
+      log_in: "Please log in first!"
+    update:
+      success: "Profile Updated"
+    edit:
+      log_in: "Please log in."
+      change: "Change"
+      submit: "Save Changes"
+      edituser: "Edit User"
+      update: "Update Your Profile"
+      create: "Create My Account"
+      signup: "Sign Up"
+      confirm: "Password Confirmation:"
+      title: "Sign Up"
+      email: "Email:"
+      name: "Name:"
+      password: "Password:"
     create:
       welcome: "Welcome To Sample App!"
     new:
