@@ -1,7 +1,16 @@
 en:
+  user_mailer:
+    account_activation:
+      hi: "Hi"
+      sample_app: "Welcome To Sample App!"
+      welcome: "Thank for signing up in our Sample App!"
+      activation_link: "Please click here to activate your new account!"
+      active_subject: "Activating Your Account!"
   sessions:
     create:
-      invalid: "Invalid email/password combination"
+      invalid: "Invalid email/password combination!"
+      not_activated_account: "Account has not been activated!"
+      check_email: "Please check your email for activation link!"
     new:
       logintittle: "Log In"
       login: "Log In"
@@ -41,6 +50,7 @@ en:
       name: "Name:"
       password: "Password:"
     create:
+      check_email: "Please check your email to activate your account!"
       welcome: "Welcome To Sample App!"
     new:
       create: "Create My Account"
