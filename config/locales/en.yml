@@ -1,5 +1,20 @@
 en:
+  password_resets:
+    create:
+      email_notfound: "Email address not found!"
+      email_sent: "Email sent with password reset instructions!"
+    new:
+      forgot_password: "Forgot Password"
+      email: "Email:"
+      submit: "Submit"
   user_mailer:
+    password_reset:
+      password_reset_text: "To reset your password click the link below:"
+      password_reset: "Password Reset"
+      reset_password: "Reset password link"
+      expire: "This link will expire in two hours."
+      ignore: "If you did not request your password to be reset,
+                 please ignore this email and your password will stay as it is."
     account_activation:
       hi: "Hi"
       sample_app: "Welcome To Sample App!"
@@ -18,6 +33,7 @@ en:
       signup: "Sign Up now!"
       email: "Email:"
       password: "Password:"
+      forgot_password: "(Forgot password?)"
       remember_me: "Remember me on this computer"
   shared:
     error_messages:
