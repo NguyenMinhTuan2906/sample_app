@@ -10,3 +10,5 @@ gravatar_option:
   size: 80
 gravatar_user:
   size: 50
+password_reset:
+  expire: 2
