@@ -1,11 +1,27 @@
-<div class="center jumbotron">
-  <h1 style="color: purple"><%= t ".sampleapp" %>
-  </h1>
-  <h2>
-    <%= t ".homepage" %> <a href="http://www.railstutorial.org/"> <%= t ".railtut" %>
-    </a> <%= t ".sample1" %>
-  </h2>
-  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
-</div>
-<%= link_to image_tag("rails.png", alt: t(".rails"), title: t(".rails1")), "http://rubyonrails.org/"%>
-<%= link_to image_tag("kitten.jpg", alt: t(".kitten"), title: t(".kitten1")) %>
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="micropost_form">
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <h3>Micropost Feed</h3>
+      <%= render "shared/feed" %>
+    </div>
+  </div>
+<% else %>
+  <div class="center jumbotron" id="image_center">
+    <h1 style="color: purple"><%= t ".sampleapp" %>
+    </h1>
+    <h2>
+      <%= t ".homepage" %> <a href="http://www.railstutorial.org/"> <%= t ".railtut" %>
+      </a> <%= t ".sample1" %>
+    </h2>
+    <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+  </div>
+  <%= link_to image_tag("rails.png", alt: t(".rails"), title: t(".rails1")), "http://rubyonrails.org/"%>
+<% end %>
