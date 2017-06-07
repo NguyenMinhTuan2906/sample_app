@@ -7,7 +7,7 @@ $(document).ready(function() {
       url: url_request,
       type: 'post',
       dataType: 'json',
-      data: {micropost: {content: content_request}},
+      data: $(this).serialize(),
     })
     .done(function(data) {
       $('.microposts').prepend(data.micropost_data);

@@ -9,9 +9,9 @@ class MicropostsController < ApplicationController
         render json: {
           micropost_data: render_to_string(@micropost, formats: [:html])
         }
-      else
-        flash[:success] = "Micropost created!"
-        redirect_to root_url
+      # else
+      #   flash[:success] = "Micropost created!"
+      #   redirect_to root_url
       end
     else
       @feed_items = []
@@ -21,8 +21,8 @@ class MicropostsController < ApplicationController
 
   def destroy
     @micropost.destroy
-    flash[:success] = "Micropost deleted"
-    redirect_to request.referrer || root_url
+    # flash[:success] = "Micropost deleted"
+    # redirect_to request.referrer || root_url
   end
 
   private
@@ -32,7 +32,6 @@ class MicropostsController < ApplicationController
   end
 
   def correct_user
-    byebug
     @micropost = current_user.microposts.find_by id: params[:id]
     redirect_to root_url if @micropost.nil?
   end
