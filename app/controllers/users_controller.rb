@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.paginate page: params[:page],
+      per_page: Settings.paginate.per_page
   end
 
   def new
@@ -40,12 +42,13 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    if @user.destroy
-      flash[:success] = t ".delete"
-    else
-      flash[:danger] = t ".delete_fail"
-    end
-    redirect_to users_url
+    @user.destroy
+    # if @user.destroy
+    #   flash[:success] = t ".delete"
+    # else
+    #   flash[:danger] = t ".delete_fail"
+    # end
+    # redirect_to users_url
   end
 
   private
@@ -53,14 +56,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
-  end
-
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t ".log_in"
-      redirect_to login_url
-    end
   end
 
   def admin_user
